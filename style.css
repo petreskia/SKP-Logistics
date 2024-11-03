@@ -1,0 +1,296 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+/* Common Styles*/
+@media only screen and (max-width: 1024px) {
+  .p-bolder,
+  h3 {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .client-card p {
+    font-size: 12px;
+  }
+  .btn {
+    font-size: smaller;
+    padding: 10px 50px !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .margin-bottom {
+    margin-bottom: 5%;
+  }
+  .p-bolder,
+  h3 {
+    font-size: 24px;
+  }
+  .wrapper {
+    width: 75%;
+  }
+  .btn {
+    padding: 10px 50px !important;
+  }
+}
+
+/* --- Banner Section --- */
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url(./assets/pictures/banner/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.banner p {
+  margin-bottom: 80px;
+}
+.banner h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  .banner h1 {
+    font-size: 1rem;
+  }
+  .banner p {
+    font-size: smaller;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  h1 {
+    font-size: 25px !important;
+  }
+}
+/* Laptop 4K */
+@media only screen and (min-width: 2560px) {
+  .banner h1 {
+    font-size: 3rem;
+  }
+  .banner p {
+    font-size: larger;
+  }
+  .btn {
+    font-size: x-large;
+    padding: 15px 70px;
+  }
+  .p-bolder,
+  h3 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+/* --- Services Section --- */
+.services-section-inner img {
+  height: 300px;
+}
+.services-section-inner p {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+  .services-section-inner .card img {
+    height: 150px;
+  }
+}
+/* --- Client-Feedback Section --- */
+.client-feedback-section {
+  background-image: url(./assets/pictures/testimonials/testimonial-background.jpg),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.client-feedback-section img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.client-card {
+  box-shadow: -4px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+@media only screen and (max-width: 768px) {
+  .client-feedback-section img {
+    height: 50px;
+    width: 50px;
+  }
+}
+/* --- Company Info Section --- */
+.company-info-section .icon {
+  color: #83e2a8;
+  font-size: 30px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .company-info-section p {
+    font-size: smaller;
+  }
+}
+/* Carousel */
+.carousel {
+  height: 280px;
+}
+.carousel-inner img {
+  height: 200px;
+}
+@media only screen and (max-width: 768px) {
+  .carousel {
+    height: 15rem;
+  }
+  .carousel-inner img {
+    height: 150px;
+  }
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23777'%3E%3Cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23777'%3E%3Cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+.carousel-indicators button {
+  background-color: #777 !important;
+  height: 10px !important;
+  width: 10px !important;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  background-color: #000 !important;
+}
+/* Mision/Vision Segment */
+.mission-vision-segment img {
+  height: 200px;
+  width: 200px;
+}
+@media only screen and (max-width: 768px) {
+  .mission-vision-segment img {
+    height: 150px;
+    width: 150px;
+  }
+  .mission-vision-segment p {
+    font-size: smaller;
+  }
+}
+/* Values Segment */
+.values-segment img {
+  height: 50px;
+  width: 50px;
+}
+.values-segment p {
+  text-align: justify;
+}
+/* --- Footer Section --- */
+/* Contact Info */
+.footer-section {
+  background-image: url(./assets/pictures/contact/contact.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.footer-section i {
+  font-size: 20px;
+}
+.footer-section p {
+  font-size: 0.6rem;
+}
+/* Location */
+.map {
+  height: 300px;
+  width: 100%;
+}
+/* Form */
+.form-inner input::placeholder,
+textarea::placeholder {
+  font-size: 12px;
+}
+.form-inner input,
+textarea {
+  padding: 4px 10px;
+  border: 1px solid #777;
+}
+.form-inner textarea {
+  padding: 10px;
+}
+/* Social Media Icons */
+.social-media-content .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.social-media-content .icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  color: white;
+  text-decoration: none;
+}
+.social-media-content .icon i {
+  font-size: 15px;
+}
+.error,
+.form-inner span {
+  color: #e74c3c;
+}
+
+/* Responsive Styles */
+@media only screen and (min-width: 1200px) {
+  .footer-section i {
+    font-size: 40px;
+  }
+  .footer-section p {
+    font-size: 1rem;
+  }
+  .inner-content {
+    padding-left: 5% !important;
+  }
+  .form-inner input::placeholder,
+  textarea::placeholder {
+    font-size: 15px;
+  }
+  .form-inner input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #777;
+  }
+  .form-inner textarea {
+    padding: 10px;
+    height: 90px;
+  }
+  .form-inner input:focus,
+  .form-inner textarea:focus {
+    outline: none;
+    border: 2px solid black;
+  }
+  .social-media-content .icon {
+    width: 50px;
+    height: 50px;
+  }
+  .social-media-content .icon i {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 424px) {
+  .social-media-content {
+    position: absolute;
+    bottom: 80px;
+    left: 230px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  .social-media-content {
+    bottom: 150px;
+    left: 175px;
+  }
+}
